@@ -1,12 +1,5 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
-\documentclass[letterpaper,11pt]{article}
-
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -18,201 +11,222 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\input{glyphtounicode}
-
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
-
-% Ensure that generate pdf is machine readable/ATS parsable
-\pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{amssymb}
+\title{Portfolio Draft 1}
+\author{Joseph Oladeji}
+\date{March 16 2023}
 
 \begin{document}
 
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
+\large
 
-\begin{center}
-    \textbf{\Huge \scshape Olufadeke Oladeji, MSN, RN-BSN} \\ \vspace{1pt}
-    Raleigh, NC  $|$
-    \small 972-302-8939 $|$
-    \href{mailto:fadetoky@yahoo.com}{\underline{fadetoky@yahoo.com}}
-\end{center}
+\maketitle
 
+\section*{1. Direct proof of an if then statement or a statement with for all and there exists.}
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Walden University}{Minneapolis, Minnesota}
-      {Master of Science in Nursing; Psychiatric-Mental Health Nurse Practitioner}{}
-    \resumeSubheading
-      {University of Texas}{Arlington, TX}
-      {Bachelor of Science in Nursing; Registered Nurse}{}
-  \resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------
-\section{Experience}
-  \resumeSubHeadingListStart
-      \resumeSubheading
-      {Primary Care Manager (RN)}{December 2017 -- January 2023}
-      {Department of Veteran Affairs}{Full-Time}
-      \resumeItemListStart
-        \resumeItem{Utilized nursing process and evidence-based practice to collaborate with Patients, Health Technicians, and Providers  to develop a patient-driven holistic care plan}
-        \resumeItem{Acted as a team leader and player to achieve desirable veterans’ outcomes and ensure policies, nursing practice, and  standards of care are being practiced correctly}
-        \resumeItem{Attended and participated in bi-weekly huddles with PACT Team to initiate and implement an interdisciplinary plan of care based on assessments}
-        \resumeItem{Assist with women's health procedures such as Pap smears, Nexplanon removal/placement, and colonoscopies. As well as performed EKGs routinely and for emergency situations.}
-        \resumeItem{Communicated with patients utilizing the VA Video Connect System, as well as triage schedule and walk-in patients as needed}
-        \resumeItem{Monitored patients at high risk for hospitalization and keep the Primary Care Provider apprised of clinical issues that may require provider intervention}
-        \resumeItem{Collaborated with other multidisciplinary teams- pharmacist, nutritionist, MH clinicians, social workers, community care personnel, etc.}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Behavioral Health Nurse (RN)}{April 2021 - September 2022}
-      {Maria Parham Health - Duke Lifepoint}{Full-Time}
-      \resumeItemListStart
-        \resumeItem{Triaging involuntary and voluntary clients with mental health and physical conditions.}
-        \resumeItem{Completing crisis assessments of clients’ mental health concerns}
-        \resumeItem{Administering oral, inhalation, and inject-able medications to patients}
-        \resumeItem{Answering and directing calls of patients with mental health concerns/crises appropriately}
-      \resumeItemListEnd
-    \resumeSubheading
-      {Emergency Response Nurse (RN)}{December 2014 -- September 2017}
-      {Department of Veteran Affairs}{Full-Time}
-      \resumeItemListStart
-        \resumeItem{Administer medications orally, Intravenously-iv push or bolus, Injections- Sub-q or intramuscular under physician’s direction.}
-        \resumeItem{Operating equipment such as EKG, Bladder scanner, DinaMap, Cardiac Monitor, POC A1c, Bhcg, Troponin, Chem.7, and insertion of Foley catheter (indwelling). Set up for Pap smear, Rectal exam, and Cervical exam.}
-        \resumeItem{Triaging patients and providing proper emergency severity index (ESI) for each patient using critical thinking skills based on patient acuity, and doing focused assessments.}
-        \resumeItem{Caring for the Veterans diagnosed with PTSD, SI and HI, depression, and anxiety or panic attacks.}
-        \resumeItem{Collaborating with other emergency medical team members to plan, manage, and assess patient treatment.}
-        \resumeItem{Delegating to other healthcare workers such as nursing assistants, RNs, and health technicians.}
-        \resumeItem{Developing skills required for competent performance in an emergent situation.}
-        \resumeItem{Supervising and guiding other staff members as an ED charge nurse.}
-        \resumeItem{Managing admissions and discharges in the Emergency Department.}
-      \resumeItemListEnd
-      \resumeSubheading
-      {Mental Health Rehabilitation Technician}{October 2008 -- December 2014}
-      {Department of Veteran Affairs}{West Haven, CT}
-      \resumeItemListStart
-        \resumeItem{Performed a wide range of administrative support and patient care duties supported by the Ambulatory Care Product Line.}
-        \resumeItem{Scheduling patients for appointments, sending out letters of notification to patients, ordering medical records, and checking in patients Answering telephone inquiries, resolving problems regarding scheduling, medications, provider contacts, etc.}
-        \resumeItem{Performing vital sign readings including temperatures, blood pressure, pulse, finger pricks, height, and weight.}
-        \resumeItem{Operating and monitoring commonly used electrocardiogram (EKG) equipment and accessories and performing other related duties as needed.}
-        \resumeItem{Observed, monitored, and documented patients' status in CPRS, completed patient security checks, respond to crisis situations, and provide patient care treatments including restraint application as directed on a restricted unit.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+1. Prove: For all integers $n$, if $n$ is odd, then \(n^2+7\) is a multiple of 4.
+\newline Description: This proof is a direct proof using the definition for odd integers.
+\newline \textbf{Steps}: \newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline \textbf{Proof}: Let \(n\) \in \mathbb{Z} \(\) and be odd.
+\newline Then n = 2t + 1, for some integer, t.
+\newline Then \(n^2\) + 7 = \((2t+1)^2\) + \(7\) = \(4t^2 + 4t + 8\) = \(4t^2+4t+8\) = \(4(t^2+t+2)\).
+\newline Since \(t^2+t+2\) is an integer, \(n^2+7\) is a multiple of 4.
+\newline
+\newline
+2. Prove or disprove:  For every nonzero real number x, there is a real number y such that 3xy=6.
+\newline Description: This proof is a direct proof. using the definition for real numbers.
+\newline \textbf{Steps}:
+\newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline \textbf{Proof}: Let \(x\) \in \mathbb{Z} \(\) and \(x \neq 0\).
+\newline Let \(y = 6/3x = 2/x\) So \(y\) is real.
+\newline Then \(3xy = 3x(\frac{2}{x}) = 6(\frac{x}{x})= 6\).
+\newline So \forall \(x\in \mathbb{R}\) \exists \(y\) where \(3xy = 6\).
 
 
+\section*{2. Direct proof where the outcome has either an AND or an OR.}
+1. Prove: If \(n\) is odd, then \(n^2 + n\) is even and \(( - 1)^2\) is a multiple of 4.
+\newline \textbf{Steps}: \newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline Description: This proof is a direct proof using the definition for odd/even integers and contains an AND statement.
+\textbf{Proof}: Let \(n\) be odd.
+\newline
+Then \(n = 2k + 1\) for \(k \in \mathbb{Z}\).
+\newline
+Then \(n^2 + n = (2k + 1)^2 + 2k + 1 = 4k^2 + 6k + 2\)
+\newline
+Since \(2k^2 + 3k + 1\) is an integer, n is even.
+Also, \((n - 1)^2 = (2k + 1 - 1)^2 = (2k)^2 = 4(k^2)\).
+Since \(k^2\) is an integer, n is a multiple of 4.
+\newline
+\newline
+2. Prove: If \(n\) is a multiple of 6, then \(n\) is either a multiple of 4 or  \(n - 2\) is a multiple of 4.
+\newline \textbf{Steps}: \newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline Description: This proof is a direct proof using the definition for odd/even integers and contains an OR statement.
+\newline
+\textbf{Proof}: Let n be a multiple of 6.
+\newline
+Then n = 6(t) for some integer, t.
+\newline
+Case 1: t is even
+\newline
+Then t = 2s, for some integer s.
+\newline
+So n = 6(2s) = 12s = 4(3s)
+\newline
+Since s \(\in\) \mathbb{Z}, n is a multiple of 4.
+\newline
+Case 2: t is odd
+\newline
+Then n = 2s + 1, for some integer s.
+\newline
+Then n = 6(2s + 1) = 12s + 6.
+\newline
+Then n - 2 = 12s + 6 - 2 = 12s + 4 = 4(3s + 1)
+\newline
+Since 3s + 1 \(\in\) \mathbb{Z}, n is a multiple of 4.
+\newline
+In all cases, where n is a multiple of 6,
+either n is a multiple of 4 or n - 2 is a multiple of 4.
+\section*{3. Proof by contrapositive or contradiction.}
+1. Proof using contrapositive: If 2n + 5m is a multiple of 3, then \(n\) is not a multiple of 3 or m is not a multiple of 3.
 
-%-----------PROGRAMMING SKILLS-----------
-\section{Licensure and Certifications}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Registered Nurse}{: North Carolina Board of Nursing}
-    \newline\textbf{Basic Life Support}{: American Heart Association}
-    }}
- \end{itemize}
-%-------------------------------------------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    \textbf{Telehealth, Video Care Connect System }
-    $|$\textbf{ EKG, Triage, Bladder Scanner }
-    $|$\textbf{ Oxygen Administration }
-    $|$\textbf{ NG Tube Insertion }
-    $|$\textbf{ Ventilator/Tracheotomy Care }
-    $|$\textbf{ Discharge Instructions }
-    $|$\textbf{ Colonoscopy }
-    $|$ \textbf{ Pap Smear Setup }
-    $|$ \textbf{ Phlebotomy }
-    $|$ \textbf{ Nexplanon Removal/Placement }
-    $|$ \textbf{ Medication Administration }
-    $|$ \textbf{ Community Outpatient Referrals/Consults }
-    $|$ \textbf{ Cardiac Monitoring }
-    $|$ \textbf{ Catheter Insertion/Removal }
-     $|$ \textbf{ Doximity }
-     $|$ \textbf{ Doxy.me }
-     $|$ \textbf{ UpToDate }
-     $|$ \textbf{ Computerized Patient Record System }
-     }}
- \end{itemize}
+\newline \textbf{Steps}: \newline 1. Identify the contrapositive of the original statement
+\newline 2. Find any applicable algebra or terms from the supplied information.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. State that by the contradiction the original statement is true or false
+\newline Description: This proof is by contrapositive, which is what usually use if we cannot easily define the 'then' part of the statement.
+\newline
+\textbf{Proof}: Let m be a multiple of 3 and n  be a multiple and n  be a multiple of 3.
+\newline
+Then m = 3s and n = 3x, where s, x \(\in\) \mathbb{Z}.
+\newline
+So 2m + 5m = 2(3x) + 5(3s) = 6x + 15s = 3(3x + 5s).
+\newline
+Since \(3x + 5s\) \(\in\) \mathbb{Z}, \(2n +5m\) is a multiple of 3.
+\newline
+By contrapositive the statement is true.
+\newline
+\newline
+2. Prove that \(4x^4 - 5 = 10x^3\) has no integer solutions.
+\newline \textbf{Steps}: \newline 1. Identify the contradiction (inverse) of the original statement
+\newline 2. Find any applicable algebra or terms from the supplied information.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. State that by the contradiction the original statement is false
+\newline Description: This proof is by contradiction, which is what usually use if we need to assume the opposite of the statement so we can attempt to prove the proof.
+\newline
+\textbf{Proof}: Let m be a multiple of 3 and n  be a multiple and n  be a multiple of 3.
+\newline
+Assume that \(4x^6 - 5 = 10x^3\) has an integer solution, call it n. 
+\newline
+Then \(4n^6 - 10n^3 - 5 = 0\). 
+\newline
+So \(4n^6 - 10n^3 = 5\), \(2(2n^2 - 5n^3 = 5\).
+\newline
+Then \(2n^6 - 5n^3 = \frac{5}{2} \notin \mathbb{Z}\).
+\newline
+But \(2n^6 + 5n^3 \notin \mathbb{Z}\).
+\newline
+This is a contradiction, so \(4x^6 - 5 = 10x^3\) has no integer solutions.
+\section*{4. Proof that one set is a subset of another or NOT a subset of another.}
+Let A = \(\{n \in \mathbb{Z} : n = 10t - 5\) for some \(t \in \mathbb{Z}\}\) and Let B = \(\{n \in \mathbb{Z} : n = 5t\) for some \(t \in \mathbb{Z}\}\)
+\newline
+\newline
+ Proof 1. Is A a subset of B? 
+\newline \textbf{Steps}: \newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information. Show x is an element of the first set.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline Description: This direct proof with subsets where we're trying to show one set is a subset of another.
+\newline
+\textbf{Proof}: Let \( x \in A.\)
+\newline
+Then \(x = 10t - 5,  where t \in 
+\mathbb{Z}\).
+\newline
+Then \(10t - 5 = 5(2t - 1)\).
+\newline
+Since \(2t - 1 \in \mathbb{Z}\), \(x \in \mathbb{Z}\)
+\newline
+Thus \(A \subseteq B\)
+\newline
+\newline
+Proof 2. Is B a subset of A? 
+\newline \textbf{Steps}: \newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information. Show x is an element of the first set.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline Description: This proof by contradiction with subsets where we're trying to show one set is a subset of another.
+\newline
+\newline
+\textbf{Proof}: Let x = 10 = 5(2), which \(10 \in B\).
+\newline
+Assume \(x \in A\)
+\newline
+Then x = 10t - 5, where t \( \in \mathbb{Z} \)
+\newline
+So 5 + (10) = (10t - 5) + 5, (15)/10 = (10t)/10,
+\newline
+15/10 = 3/2 = \(t \in \mathbb{Z}\)
+However \(t \in \mathbb{Z}\) and \(t = 3/2\).
+\newline
+By contradiction \(B \subseteq C\)
+\section*{5. Proof involving collections of sets.}
+Proof 1. If \(B \subseteq A\), \(A \subseteq D\), and \(C \subseteq D\), then \(B \cup C\) \(\subseteq D\).
+\newline \textbf{Steps}: \newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information. Show x is an element of the first sets.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline Description: This proof with collections of a sets where we're trying to show a union of two sets is a subset of another.
+\newline
+\textbf{Proof}: Assume \(B \subseteq A, A \subseteq D\), and \(C \subseteq D\).
+\newline
+Let \(x \in \) \(B \cup C\).
+\newline
+Then \(x \in B or x \in C\).
+\newline
+Case 1: \(x \in B\)
+\newline
+Since \(x \in B\) and \(B \subseteq A and A \subseteq D\), \(x \in D\).
+\newline
+Case 2: \( x \in C\)
+\newline
+Since \(x \in C\) and \(C \subseteq D\), \(x \in D\).
+\newline
+In all cases where \(x \in B \cup C\), \(x \in D\). Thus \(B \cup C \subseteq D\).
+\newline
+\newline
+Proof 2. If \(B \cap A \subseteq C, and A \cup C \subseteq D, then B \cup C \subseteq D\).
+\newline \textbf{Steps}: \newline 1. Identify the statement that has to be provided.
+\newline 2. Find any applicable algebra or terms from the supplied information. Show x is an element of the first sets.
+\newline 3. Show how the premises and provided information lead to the conclusion using logical reasoning.
+\newline 4. Make sure the rationale is sound and that every step is supported.
+Explain the conclusion in detail.
+\newline Description: This proof with collections of a sets where we're trying to show a intersect of two sets is a subset of another.
+\newline
+\textbf{Disproof}: Let \(A = \{1, 2 ,3\}\),\(B = \{2, 3\}\), \(C = \{2\}\), and \(D = \{1, 2, 4, 5\}\)
+\newline
+Note that $A \cap B \subseteq C$ and $A \cup C \susbseteq D$.
+\newline
+However $B \cup C$ = $\{2, 3\}$ which is not a subset of $D$, because $3 \in B \cup C$ and $3 \notin D$.
+\newline
+Therefore the original statement is false.
+
 \end{document}
